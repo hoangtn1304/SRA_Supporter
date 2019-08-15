@@ -1,9 +1,8 @@
-const express = require('express');
+var express = require('express');
+var app = express();
 
-let app = express();
-
-app.get('/', function(req, res) {
-        return 'OK';
-})
+app.get('/', function(req, res){
+        res.send('Hello World Ricky abc 123');
+});
 
 module.exports = app;
